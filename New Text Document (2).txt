@@ -1,0 +1,12 @@
+import re
+txt = 'x==0' 
+id='([a-zA-Z_])([a-zA-Z0-9_])*'
+num = '(([-|+]?\d+)|([-|+]?\d+\.)|([-|+]?\.\d+)|([-|+]?\d+\.\d+))'
+num1 = '(\d+)'
+op = '((<)|(>)|(==)|(!=)|(<=)|(>=))'
+inc_pat = '^(('+num+'|'+id+')'+op+'('+num+'|'+id+'))$'
+if_pat='^(if\s*('+num+'|'+id+')'+op+'if\s*('+num+'|'+id+'))$'
+if re.match(inc_pat,txt):
+    print('True')
+else:
+    print('False')
