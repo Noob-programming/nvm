@@ -3,7 +3,7 @@ from turtle import *
 f = Turtle()
 # f.speed(0)
 # first angle
-f.pensize(20)
+f.pensize(5)
 f.pencolor("blue")
 f.lt(30)
 f.fd(50)
@@ -33,6 +33,6 @@ f.fd(50)
 f.rt(55)
 f.fd(50)
 f.rt(45)
-f.fd(40)
+f.fd(50)
 
 done()

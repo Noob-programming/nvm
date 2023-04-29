@@ -2,6 +2,7 @@ from turtle import *
 
 t = Turtle()
 # bgcolor("purple")
+t.speed(0)
 
 
 def trn():
